@@ -15,14 +15,15 @@ background-color: var(--white-text-color);
 color: var(--secondary-text-color);
 font-family: Roboto, sans-serif;}
 
-p{
+p, ul, h1, h2, h3{
 padding: 0;
-margin: 0;}
+margin: 0;
+list-style: none;}
 
-.list{
+.link{
 list-style: none;
-padding: 0;
-margin: 0;}
+text-decoration: none;}
+
 
 .container{
 width: 1200px;
@@ -34,10 +35,7 @@ outline: 2px solid tomato;}
 padding-top: 94px;
 padding-bottom: 94px;}
 
-.centred{
-text-align: center;}
-
-    /* logo */
+/* logo */
 
 .logo{
 color: var(--accent-color);
@@ -51,9 +49,12 @@ letter-spacing: 0.03em;}
 .logo-top{
 color: var(--primary-text-color);}
 
+.logo-botom {
+color:  var(--white-text-color);}
+    
 /* site-nav */
 
-.site-nav .list {
+.site-nav .link {
 color: var(--primary-text-color);
 
 text-decoration: none;
@@ -65,10 +66,10 @@ letter-spacing: 0.02em;}
 .site-nav .current{
 color: var(--accent-color);}
 
-.site-nav .list:hover, .site-nav .list:focus {
+.site-nav .link:hover, .site-nav .link:focus {
 color: var(--accent-color);}
 
-.contacts-nav .list{
+.contacts-nav .link{
 color: var(--secondary-text-color);
 
 text-decoration: none;
@@ -77,12 +78,12 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;}
 
-.contacts-nav .list:hover, .contacts-nav .list:focus{
+.contacts-nav .link:hover, .contacts-nav .link:focus{
 color: var(--accent-color);}
 
 /* button */
 
-.button{
+.primary-btn{
 background-color: var(--accent-color);
 color: var(--white-text-color);
 border: 0;
@@ -95,7 +96,7 @@ font-size: 16px;
 line-height: 1.9;
 letter-spacing: 0.06em;}
 
-.button:hover, .button:focus{
+.primary-btn:hover, .primary-btn:focus{
 background-color: #188CE8;}
 
 .portfolio-btn:hover, .portfolio-btn:focus{
@@ -113,16 +114,18 @@ font-family: inherit;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.6;
-letter-spacing: 0.03em;}
+letter-spacing: 0.03em;
+padding: 6px 22px 6px 22px;}
 
 .current-btn{
 background-color: var(--accent-color);
 color: var(--white-text-color);}
 
+/* Hero */
+
 .hero{
 background-color: #2F303A;
-text-align: center;
-}
+text-align: center;}
 
 .hero-title {
 color: var(--white-text-color);
@@ -135,6 +138,8 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 margin-bottom: 30px;}
 
+/* portfolio */
+
 .examples{
 color: var(--primary-text-color);
 
@@ -145,12 +150,19 @@ letter-spacing: 0.06em;
 margin-top: 0;
 margin-bottom: 4px;}
 
-.decoration{
-    text-decoration: none;}
-    
-/* section */
 
-.section-title{
+.product-item{
+color: var(--secondary-text-color);
+    
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;
+margin-top: 0;
+margin-bottom: 0;}
+    
+/* options */
+
+.options-title{
 color: var(--primary-text-color);
 
 font-weight: 700;
@@ -160,17 +172,11 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 margin-bottom: 10px;}
 
-.product-item{
-color: var(--secondary-text-color);
+.visually-hidden{
+position: fixed;
+transform: scale(0);}
 
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;
-margin-top: 0;
-margin-bottom: 0;}
-
-.section-text{
-
+.options-text{
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em}
@@ -188,26 +194,19 @@ letter-spacing: 0.03em;
 margin-bottom: 50px;}
 
 /* team-list */
+
 .team{
-background-color: #F5F4FA;;}
+background-color: #F5F4FA;}
 
 .team-bgk{
 background-color: var(--white-text-color);}
 
-.team-list .title {
+.team-list{
 color: var(--primary-text-color);}
 
-.team .title{
- font-weight: 500;
- font-size: 16px;
-line-height: 1.18;
-letter-spacing: 0.03em;
-margin-top: 30px;
-margin-bottom: 10px;}
-
-.team-title {
+.team-title{
 color: var(--primary-text-color);
-
+    
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
@@ -215,13 +214,21 @@ text-align: center;
 letter-spacing: 0.03em;
 margin-bottom: 50px;}
 
-.team .work{
+.team-name{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+letter-spacing: 0.03em;
+margin-top: 30px;
+margin-bottom: 10px;}
 
+.team-work{
 font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;}
 
 /* footer */
+
 .footer-bgk{
 background-color: #2F303A;}
 
@@ -234,7 +241,7 @@ line-height: 1.7;
 letter-spacing: 0.03em;
 margin-top: 20px;}
 
-.footer .list{
+.footer .link{
 color: rgba(255, 255, 255, 0.6);
 font-style: normal;
 font-weight: 400;
@@ -242,6 +249,4 @@ font-size: 14px;
 line-height: 1.7;
 letter-spacing: 0.03em;}
 
-.logo-botom {
-color:  var(--white-text-color);}
 
