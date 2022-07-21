@@ -46,7 +46,7 @@ padding-bottom: 94px;}
 
 .header{
 padding: 0;
-border-bottom: 1px transparent}
+border-bottom: 1px solid #cecece}
 
 /* logo */
 
@@ -157,7 +157,8 @@ column-gap: 8px;}
 
 .portfolio-text{
 padding: 20px 24px;
-border: 1px solid #EEEEEE;}
+border: 1px solid #EEEEEE;
+border-top: 0;}
 
 .portfolio-btn{
 background-color: #f5f4fa;
