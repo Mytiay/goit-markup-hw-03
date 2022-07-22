@@ -324,9 +324,8 @@ padding-bottom: 60px;}
 
 .contacts .address{
 color: #ffffff;
-font-style: normal;
-font-weight: 400;
 font-size: 14px;
+font-style: normal;
 line-height: 1.7;
 letter-spacing: 0.03em;}
 
@@ -339,17 +338,12 @@ letter-spacing: 0.03em;}
 
 .contact-address{margin-top: 20px;}
 
-.footer {
-margin-top: 9px;}
+.footer {margin-top: 9px;}
 
-.footer>li{
-padding: 0;}
+.footer>li{padding: 0;}
 
-.footer .contacts-nav + .contacts-nav{
-margin-top: 9px;}
+.footer .contacts-nav + .contacts-nav{margin-top: 9px;}
 
-.contacts-bottom .link{
-padding: 0;}
+.contacts-bottom .link{padding: 0;}
 
-.footer-bgk a{
-padding: 0;}
+.footer-bgk a{padding: 0;}
