@@ -333,7 +333,6 @@ letter-spacing: 0.03em;}
 .footer .link{
 color: rgba(255, 255, 255, 0.6);
 font-style: normal;
-font-weight: 400;
 font-size: 14px;
 line-height: 1.7;
 letter-spacing: 0.03em;}
@@ -349,3 +348,8 @@ padding: 0;}
 .footer .contacts-nav + .contacts-nav{
 margin-top: 9px;}
 
+.contacts-bottom .link{
+padding: 0;}
+
+.footer-bgk a{
+padding: 0;}
